@@ -2,4 +2,4 @@
 result = ""
 for i in range(97, 123):
     result += chr(i)
-print(f"{result}", end="")
+print("{}".format(result), end="")
