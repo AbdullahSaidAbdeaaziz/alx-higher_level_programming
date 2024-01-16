@@ -1,0 +1,2 @@
+#!/bin/bash
+python3 -c "import py_compile; import os; file='$PYFILE'; py_compile.compile(file, cfile=os.path.basename(file) + 'c');"
