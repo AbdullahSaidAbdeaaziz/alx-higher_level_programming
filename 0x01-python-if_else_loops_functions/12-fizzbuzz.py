@@ -13,4 +13,5 @@ def fizzbuzz():
         is_fizz_buzz = check_fizz_buzz(i)
         if not is_fizz_buzz:
             print(i, end=" ")
-        print(is_fizz_buzz, end=" ")
+        else:
+            print(is_fizz_buzz, end=" ")
