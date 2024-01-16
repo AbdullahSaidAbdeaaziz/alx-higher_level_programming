@@ -1,9 +1,10 @@
 #!/usr/bin/python3
+result = ""
 for i in range(100):
     if i < 10:
-        print(f"0{i}", end="")
+        result += f"0{i}"
     else:
-        print(f"{i}", end="")
+        result += f"{i}"
     if i != 99:
-        print(", ", end="")
-print()
+        result += f", "
+print(result)
