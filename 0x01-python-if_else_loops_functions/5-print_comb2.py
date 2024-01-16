@@ -7,4 +7,4 @@ for i in range(100):
         result += f"{i}"
     if i != 99:
         result += f", "
-print(result)
+print("{}".format(result))
