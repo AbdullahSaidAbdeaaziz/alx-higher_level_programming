@@ -10,7 +10,6 @@ def roman_to_int(roman_string):
         return roman_int[roman_string[0]]
     number = 0
     i = 0
-    # ICI
     while i < len(roman_string):
         first = roman_int[roman_string[i]]
         if i + 1 < len(roman_string):
