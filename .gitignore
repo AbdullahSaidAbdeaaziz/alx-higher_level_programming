@@ -1,2 +1,4 @@
 __pycache__
-*_[0-9].py
+*.pyc
+[0-9]-main.py
+.vscode
