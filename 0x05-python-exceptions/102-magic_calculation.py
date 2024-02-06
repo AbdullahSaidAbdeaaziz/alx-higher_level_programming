@@ -1,5 +1,5 @@
 #!/usr/bin/python
-from dis import dis
+# from dis import dis
 def magic_calculation(a, b):
     result = 0
     for i in range(1, 3):
@@ -10,6 +10,5 @@ def magic_calculation(a, b):
         except Exception:
             result = a + b
             break
-        return result
-
-print(dis(magic_calculation))
+    return result
+# print(dis(magic_calculation))
