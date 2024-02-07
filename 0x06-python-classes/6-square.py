@@ -36,10 +36,12 @@ class Square:
     @position.setter
     def position(self, coordinate):
         '''set coordinate of square'''
-        if not isinstance(coordinate, tuple) and (
-            not all(isinstance(cord, int) for cord in coordinate)
-        ) and not all(cord >= 0 for cord in coordinate) and len(coordinate) != 2:
+        if (not isinstance(coordinate, tuple) or
+                len(coordinate) != 2 or
+                not all(isinstance(num, int) for num in coordinate) or
+                not all(num >= 0 for num in coordinate)):
             raise TypeError("position must be a tuple of 2 positive integers")
+        self.__position = coordinate
         self.__position = coordinate
 
     def area(self):
