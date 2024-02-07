@@ -1,57 +1,58 @@
 #!/usr/bin/python3
 
-'''More upgrade for class square'''
+"""Final class Square."""
 
 
 class Square:
-    "Hi I'm upgrade square"
-    def __init__(self, size=0, position=(0, 0)) -> None:
-        '''Initialize square with size also with default value.
+    "Hi I'm final upgraded square"
+
+    def __init__(self, size=0, position=(0, 0)):
+        """Initialize a square.
 
         Args:
-            size (int): size of square
-        '''
+            size (int): The size of square.
+            position (int, int): The position of the new square.
+        """
         self.__size = size
         self.__position = position
 
     @property
     def size(self):
-        '''get size of square'''
-        return self.__size
+        """Get/set the current size of the square."""
+        return (self.__size)
 
     @size.setter
     def size(self, value):
-        '''set value to size of square'''
         if not isinstance(value, int):
             raise TypeError("size must be an integer")
-        if value < 0:
+        elif value < 0:
             raise ValueError("size must be >= 0")
         self.__size = value
 
     @property
     def position(self):
-        '''get coordinate of square'''
-        return self.__position
+        """Get/set the current position of the square."""
+        return (self.__position)
 
     @position.setter
-    def position(self, coordinate):
-        '''set coordinate of square'''
-        if (not isinstance(coordinate, tuple) or
-                len(coordinate) != 2 or
-                not all(isinstance(num, int) for num in coordinate) or
-                not all(num >= 0 for num in coordinate)):
+    def position(self, value):
+        if (not isinstance(value, tuple) or
+                len(value) != 2 or
+                not all(isinstance(num, int) for num in value) or
+                not all(num >= 0 for num in value)):
             raise TypeError("position must be a tuple of 2 positive integers")
-        self.__position = coordinate
+        self.__position = value
 
     def area(self):
-        '''Return area of square'''
-        return self.__size ** 2
+        """Return the current area of the square."""
+        return (self.__size * self.__size)
 
     def my_print(self):
-        '''print shape of square'''
-        if not self.__size:
+        """Print the square with the # character."""
+        if self.__size == 0:
             print("")
             return
-        print(""*self.position[1])
-        for _ in range(self.__size):
+
+        print(""*self.__position[1])
+        for i in range(0, self.__size):
             print(f'{" "*self.__position[0]}{"#"*self.__size}')
