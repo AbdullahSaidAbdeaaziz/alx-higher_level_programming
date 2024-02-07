@@ -1,5 +1,7 @@
 #!/usr/bin/python3
 '''create advance class square'''
+
+
 class Square:
     '''Hi I'm Advanced square'''
     def __init__(self, size=0) -> None:
