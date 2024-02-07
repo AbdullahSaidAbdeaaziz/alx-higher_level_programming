@@ -1,16 +1,16 @@
 #!/usr/bin/python3
 
-"""Final class Square."""
+"""More upgrade for class square"""
 
 
 class Square:
-    "Hi I'm final upgraded square"
+    """Hi I'm final upgraded square"""
 
     def __init__(self, size=0, position=(0, 0)):
-        """Initialize a square.
+        """Initialize a new square.
 
         Args:
-            size (int): The size of square.
+            size (int): The size of the new square.
             position (int, int): The position of the new square.
         """
         self.__size = size
@@ -53,6 +53,7 @@ class Square:
             print("")
             return
 
-        print(""*self.__position[1], end="")
+        for i in self.__position[1]:
+            print("")
         for i in range(0, self.__size):
-            print(f'{" "*self.__position[0]}{"#"*self.__size}')
+            print(f"{' '*self.__position[0]}{'#'*self.__size}")
