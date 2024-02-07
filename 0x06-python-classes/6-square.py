@@ -37,8 +37,8 @@ class Square:
     def position(self, coordinate):
         '''set coordinate of square'''
         if not isinstance(coordinate, tuple) and (
-            all(not isinstance(cord, int) for cord in coordinate)
-        ) and all(not cord >= 0 for cord in coordinate):
+            not all(isinstance(cord, int) for cord in coordinate)
+        ) and not all(cord >= 0 for cord in coordinate):
             raise TypeError("position must be a tuple of 2 positive integers")
         self.__position = coordinate
 
