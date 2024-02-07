@@ -42,7 +42,6 @@ class Square:
                 not all(num >= 0 for num in coordinate)):
             raise TypeError("position must be a tuple of 2 positive integers")
         self.__position = coordinate
-        self.__position = coordinate
 
     def area(self):
         '''Return area of square'''
