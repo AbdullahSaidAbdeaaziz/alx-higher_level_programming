@@ -1,8 +1,8 @@
 #!/usr/bin/python3
 
-'''Triangle class'''
+'''Rectangle class'''
 
 
-class Triangle:
+class Rectangle:
     '''Empty Class'''
     pass
