@@ -69,3 +69,10 @@ class Rectangle:
         if self.width == 0 or self.height == 0:
             return 0
         return 2 * (self.width + self.height)
+    def __str__(self):
+        if self.width == 0 or self.height == 0:
+            return ''
+        w = '#' * self.width
+        rect = f'{w}\n'*self.height
+        rect = rect[:-1]
+        return rect
