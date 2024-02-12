@@ -80,4 +80,4 @@ class Rectangle:
 
     def __repr__(self):
         '''Return new representation for rectangle'''
-        return f'Retangle({self.width}, {self.height})'
+        return f'Rectangle({self.width}, {self.height})'
