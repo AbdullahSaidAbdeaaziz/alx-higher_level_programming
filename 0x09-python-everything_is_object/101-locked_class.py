@@ -3,14 +3,6 @@
 
 
 class LockedClass:
-    '''Prevent last_name attribute from creating'''
+    '''Prevent any attribute from creating except first_name'''
 
-    def __setattr__(self, __name, __value):
-        '''
-        check instance name of attribute that begin pass to class
-        Raises:
-        AttributeError: class has no attribute last_name
-        '''
-
-        if f'__{__name}' in self.__dict__.keys():
-            raise AttributeError("'LockedClass' has no attribute 'last_name'")
+    __slots__ = ['first_name']
