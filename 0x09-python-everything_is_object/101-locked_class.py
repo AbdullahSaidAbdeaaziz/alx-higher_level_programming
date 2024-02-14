@@ -12,5 +12,5 @@ class LockedClass:
         AttributeError: class has no attribute last_name
         '''
 
-        if __name == 'last_name':
+        if f'__{__name}' in self.__dict__.keys():
             raise AttributeError("'LockedClass' has no attribute 'last_name'")
