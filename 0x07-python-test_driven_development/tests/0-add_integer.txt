@@ -50,6 +50,16 @@ It also works with float-point numbers
     >>> add_integer(-1)
     97
 
+Adding infinity
+
+::
+
+    >>> add_integer(1, float('inf'))
+    Traceback (most recent call last):
+    OverflowError: cannot convert float infinity to integer
+
+
+
 Non-Numbers
 ===========
 
