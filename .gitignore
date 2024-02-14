@@ -2,3 +2,4 @@ __pycache__
 *.pyc
 [0-9]-main.py
 .vscode
+me_*.py
