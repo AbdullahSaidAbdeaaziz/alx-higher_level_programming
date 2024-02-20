@@ -2,6 +2,7 @@
 
 '''Read specific file'''
 
+
 def read_file(filename=""):
     '''read file if exist, otherwise raise error'''
     if not filename:
