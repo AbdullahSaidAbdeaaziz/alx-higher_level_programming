@@ -4,7 +4,9 @@ from json import dumps
 
 
 def to_json_string(my_obj):
-    '''serialize my_obj to json
+    '''serialize `my_obj` to json
     if can!
+    Returns:
+    serialize obj to json with type string
     '''
     return f'{dumps(my_obj)}'
