@@ -18,10 +18,7 @@ class Student:
         Args:
         attrs (optional, list[string])
         Return  dictionary representation of a Student'''
-        if not attrs or not isinstance(attrs, list):
-            return self.__dict__
-        new_dict = {}
-        for attr in attrs:
-            if hasattr(self, attr) and isinstance(attr, str):
-                new_dict.update({attr: getattr(self, attr)})
-        return new_dict
+        if (isinstance(attrs, list) and
+                all(isinstance(ele, str) for ele in attrs)):
+            return {k: getattr(self, k) for k in attrs if hasattr(self, k)}
+        return self.__dict__
