@@ -14,7 +14,7 @@ def main():
         items = load_file('add_item.json')
     except Exception:
         items = []
-    items.extend(argv[1:])
+    items += argv[1:]
     save_file(items, 'add_item.json')
 
 

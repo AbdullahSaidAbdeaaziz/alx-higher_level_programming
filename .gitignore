@@ -3,3 +3,4 @@ __pycache__
 [0-9]-main.py
 .vscode
 me_*.py
+*.json
