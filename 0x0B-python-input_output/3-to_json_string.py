@@ -1,6 +1,6 @@
 #!/usr/bin/python3
-from json import dumps
 '''Convert to json if can'''
+from json import dumps
 
 
 def to_json_string(my_obj):
@@ -9,4 +9,4 @@ def to_json_string(my_obj):
     Returns:
     serialize obj to json with type string
     '''
-    return f'{dumps(my_obj)}'
+    return dumps(my_obj)
