@@ -23,7 +23,7 @@ class Student:
         new_dict = {}
         for attr in attrs:
             for key in self.__dict__:
-                if key == attr:
+                if key == attr and isinstance(attr, str):
                     new_dict.update({key: self.__dict__[key]})
                     break
         return new_dict
