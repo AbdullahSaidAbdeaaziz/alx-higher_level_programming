@@ -22,8 +22,6 @@ class Student:
             return self.__dict__
         new_dict = {}
         for attr in attrs:
-            for key in self.__dict__:
-                if key == attr and isinstance(attr, str):
-                    new_dict.update({key: self.__dict__[key]})
-                    break
+            if hasattr(self, attr) and isinstance(attr, str):
+                new_dict.update({attr: getattr(self, attr)})
         return new_dict
