@@ -22,7 +22,3 @@ class Square(Rectangle):
     def __str__(self):
         '''Return Square representation'''
         return f'[Square] {self.__size}/{self.__size}'
-
-    def __repr__(self):
-        '''Return Square representation'''
-        return f'[Square] {self.__size}/{self.__size}'
