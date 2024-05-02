@@ -29,7 +29,7 @@
 1. [writing JS Code](https://intranet.alxswe.com/rltoken/3HLjEesLsmyWfRUWnxgUGg)
 2. [Variables](https://intranet.alxswe.com/rltoken/zgOWmcpVLZFEmFlmuwayyg)
 3. [Data Types](https://intranet.alxswe.com/rltoken/VPd6JWaLrwOBzjAeXNAEqg)
-4. [Operator](https://intranet.alxswe.com/rltoken/3HLjEesLsmyWfRUWnxgUGg)
+4. [Operator](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators)
 5. [Operator Precedence](https://intranet.alxswe.com/rltoken/PHtcJJk30gBNmlFQ9R4RVg)
 6. [Controlling Program Flow](https://intranet.alxswe.com/rltoken/tsreKcNh_KmTmLPHsfvJRw)
 7. [Functions](https://intranet.alxswe.com/rltoken/e3EfHIxICdIncGBwwIDbXQ)
